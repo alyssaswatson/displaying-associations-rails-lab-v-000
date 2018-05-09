@@ -1,4 +1,4 @@
 <%= @artist.name %>
-<%@artist.songs.each do |song|%>
+<% @artist.songs.each do |song| %>
 <%= link_to song.title, song_path(song.title) if song.title %>
 <%end%>
